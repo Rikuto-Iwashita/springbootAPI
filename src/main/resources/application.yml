@@ -1,9 +1,9 @@
 # JDBCの接続設定
 dbcp2.jdbc:
-  driver-class-name: com.mysql.jdbc.Driver
-  url: jdbc:mysql://localhost:3306/moviedb?characterEncoding=UTF-8
+  driver-class-name: com.mysql.cj.jdbc.Driver  # 修正済み
+  url: jdbc:mysql://localhost:3306/moviedb?characterEncoding=UTF-8&serverTimezone=Asia/Tokyo&useSSL=false
   username: root
-  password: password
+  password: pass
   initial-size: 1
   max-idle: 3
   min-idle: 1

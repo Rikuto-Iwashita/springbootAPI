@@ -1,9 +1,8 @@
 package com.example.demo.configuration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.bind.ConstructorBinding;
 
-@ConstructorBinding
+
 @ConfigurationProperties(prefix = "dbcp2.jdbc")
 public class DataSourceConfigurationProperties {
     private final String url;

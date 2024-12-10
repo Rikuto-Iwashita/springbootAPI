@@ -9,7 +9,6 @@ import com.example.demo.configuration.DataSourceConfigurationProperties;
 @SpringBootApplication
 @EnableConfigurationProperties(DataSourceConfigurationProperties.class)
 public class SpringbootWebApiDemoApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(SpringbootWebApiDemoApplication.class, args);
     }
